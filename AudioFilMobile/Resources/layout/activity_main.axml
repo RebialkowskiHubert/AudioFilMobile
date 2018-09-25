@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:a="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    a:layout_width="match_parent"
+    a:layout_height="match_parent">		
+
+	<ImageButton
+		a:id="@+id/btn_play"
+		a:layout_width="match_parent"
+		a:layout_height="wrap_content"
+		a:src="@android:drawable/ic_media_play"
+		a:layout_centerHorizontal="true"/>
+	
+	<ImageButton
+		a:id="@+id/btn_stop"
+		a:layout_width="match_parent"
+		a:layout_height="wrap_content"
+		a:layout_below="@id/btn_play"
+		a:src="@android:drawable/ic_media_pause"
+		a:layout_centerHorizontal="true" />
+
+	<ProgressBar 
+		a:id="@+id/progressBar1"
+		a:layout_width="match_parent"
+		a:layout_height="wrap_content"
+		a:layout_centerInParent="true"
+		a:indeterminate="true"
+		a:visibility="invisible"/>
 </RelativeLayout>
